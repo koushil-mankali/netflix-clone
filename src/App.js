@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import request from './resources/requestLinks';
+import Header from './components/Header';
+import Banner from './components/Banner';
+import Row from './components/Row';
+import Footer from './components/Footer';
 
-function App() {
+let App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='app'>
+        <Header />
+        <Banner />
+        <Row title ={"Netflix Originals"} fetchURL={request.noriginalsTMBD} bigRow/>
+        <Row title ={"Trending Now"} fetchURL={request.trendingTMBD}/>
+        <Row title ={"Top Rated"} fetchURL={request.topratedTMBD}/>
+        <Row title ={"Action Movies"} fetchURL={request.actionmoviesTMBD}/>
+        <Row title ={"Comedy Movies"} fetchURL={request.comedymoviesTMBD}/>
+        <Row title ={"Horror Movies"} fetchURL={request.horrormoviesTMBD}/>
+        <Row title ={"Documentaries"} fetchURL={request.documentariesTMBD}/>
+        <Footer />
+      </div>
+    </>
   );
-}
+};
 
 export default App;
