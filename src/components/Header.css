@@ -1,53 +1,56 @@
-.nav{
-    width:100%;
-    height:50px;
-    display:flex;
-    justify-content: space-between;
-    position: fixed;
-    top:0;
-    padding:10px 20px;
-    z-index:1;
-    transition-timing-function: ease-in;
-    transition: all 0.5s;
+.nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  padding: 10px 20px;
+  z-index: 1;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
 }
-.logo{
-    width:90px;
-    object-fit: contain;
-    /* position: fixed;
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  width: max-content;
+  color: red;
+  object-fit: contain;
+  /* position: fixed;
     left:20px; */
 }
-.profile{
-    width:30px;
-    object-fit: contain;
-    /* position: fixed;
+.profile {
+  width: 30px;
+  object-fit: contain;
+  /* position: fixed;
     right:20px; */
 }
-.navScroll{
-    background-color: #181818;
+.navScroll {
+  background-color: #181818;
 }
-.join_btn{
-    color:white;
-    background-color: #F40612;
-    padding:8px;
-    border-radius:2px;
-    border:none;
-    outline:none;
-    cursor: pointer;
-    margin:0 10px;
+.join_btn {
+  color: white;
+  background-color: #f40612;
+  padding: 8px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 10px;
 }
-.join_btn:hover{
-    background-color: rgba(244,6,18,0.8);
+.join_btn:hover {
+  background-color: rgba(244, 6, 18, 0.8);
 }
-.sign_btn{
-    color:white;
-    background-color: #111;
-    border:1px solid white;
-    border-radius:2px;
-    padding:8px;
-    outline:none;
-    cursor: pointer;
-    margin:0 10px;
+.sign_btn {
+  color: white;
+  background-color: #111;
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 8px;
+  outline: none;
+  cursor: pointer;
+  margin: 0 10px;
 }
-.sign_btn:hover{
-    background-color: rgba(17,17,17,0.2);
+.sign_btn:hover {
+  background-color: rgba(17, 17, 17, 0.2);
 }
