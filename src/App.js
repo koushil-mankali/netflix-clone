@@ -9,7 +9,13 @@ let App = () => {
   return (
     <>
       <div className="app">
-        <h1 style="font-size: 3rem; background-color: white; color: red">
+        <h1
+          style={{
+            "font-size": "3rem",
+            "background-color": "white",
+            color: "red",
+          }}
+        >
           NOTE: This Project is just for EDUCATIONAL PURPOSE, Its doesnt provide
           any service or netflix content, this project is just react js practice
           project, it only contains 1 page, and doesnt contain any content of
