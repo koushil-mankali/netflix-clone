@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import logo from "../assets/netflix.png";
-import profile from "../assets/profile.png";
 import "./Header.css";
 
 let Header = () => {
@@ -27,7 +25,6 @@ let Header = () => {
   return (
     <>
       <div className={`nav ${navScroll && "navScroll"}`}>
-        {/* <img  src={logo} alt='logo'/> */}
         <div className="logo">Netflix Clone</div>
         <div className="hbtns">
           <button type="button" className="join_btn">
